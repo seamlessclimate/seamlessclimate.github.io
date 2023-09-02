@@ -167,14 +167,20 @@ function login() {
         loginPasswordInput.value = '';
         home.classList.remove("show");
       } else {
-        console.log('Email not verified.');
         errorMessage.innerText = 'Please verify your email before logging in.';
+        
+        // Sign the user out to prevent them from accessing the app
+        firebase.auth().signOut().then(() => {
+          console.log('User signed out due to unverified email.');
+        }).catch(error => {
+          console.error('Sign-out error:', error.message);
+        });
       }
     })
     .catch(error => {
       console.error('Login error:', error.message);
       errorMessage.innerText = 'Invalid credentials. Please try again.';
-      console.log('Error:', error); // Log the error for debugging
+      console.log('Error:', error);
     });
 }
 
