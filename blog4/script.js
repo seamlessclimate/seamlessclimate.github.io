@@ -173,7 +173,7 @@ function login() {
 
         home.classList.remove("show"); // Hide the login form
       } else {
-        successMessage.innerText = '';
+        // successMessage.innerText = '';
         errorMessage.innerText = 'Please verify your email before logging in.';
       }
     })
