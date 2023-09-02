@@ -193,7 +193,7 @@ function register() {
   const successMessageSignup = document.getElementById('success-message-signup');
 
   // Check if passwords match
-  if (password !== confirmPassword) {
+  if (password !== confirmPasswordSignup) {
     passwordMismatchSignup.innerText = 'Passwords do not match. Please try again.';
     successMessageSignup.innerText = ''; // Clear the success message
     return; // Exit the function without attempting registration
