@@ -155,32 +155,26 @@ const registerPasswordInput = document.getElementById('register-password');
 function login() {
   const email = loginEmailInput.value;
   const password = loginPasswordInput.value;
-  // const successMessage = document.getElementById('success-message-login');
-  const errorMessage = document.getElementById('error-message-login'); // Add an error message element
+  const errorMessage = document.getElementById('error-message-login');
 
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
       const user = userCredential.user;
 
-      // Check if the email is verified
       if (user.emailVerified) {
-        // successMessage.innerText = 'Login successful.';
-        errorMessage.innerText = ''; // Clear any previous error messages
-
-        // Clear the login form fields
+        errorMessage.innerText = '';
         loginEmailInput.value = '';
         loginPasswordInput.value = '';
-
-        home.classList.remove("show"); // Hide the login form
+        home.classList.remove("show");
       } else {
-        // successMessage.innerText = '';
+        console.log('Email not verified.');
         errorMessage.innerText = 'Please verify your email before logging in.';
       }
     })
     .catch(error => {
       console.error('Login error:', error.message);
-      // Display an error message to the user
-      errorMessage.innerText = 'Invalid credentials. Please try again.'; // Customize the error message as needed
+      errorMessage.innerText = 'Invalid credentials. Please try again.';
+      console.log('Error:', error); // Log the error for debugging
     });
 }
 
