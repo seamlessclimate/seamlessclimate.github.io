@@ -35,7 +35,7 @@ function handleDarkModeToggle() {
   });
 }
 
-toggleBtn.addEventListener('change', handleDarkModeToggle);
+// toggleBtn.addEventListener('change', handleDarkModeToggle);
 
 
 
