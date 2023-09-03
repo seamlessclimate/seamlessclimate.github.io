@@ -197,10 +197,11 @@ function register() {
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
       // Send email verification
-      return userCredential.user.sendEmailVerification();
+      userCredential.user.sendEmailVerification();
+      firebase.auth().signOut()
+      return;
     })
     .then(() => {
-      firebase.auth().signOut()
       passwordMismatchSignup.innerText = ''; // Clear the error message
       successMessageSignup.innerText = 'Registration successful. Please check your email to verify.';
       console.log('Verification email sent. Please verify your email.');
