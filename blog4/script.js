@@ -167,14 +167,8 @@ function login() {
         loginPasswordInput.value = '';
         home.classList.remove("show");
       } else {
+        firebase.auth().signOut()
         errorMessage.innerText = 'Please verify your email before logging in.';
-        
-        // Sign the user out to prevent them from accessing the app
-        firebase.auth().signOut().then(() => {
-          console.log('User signed out due to unverified email.');
-        }).catch(error => {
-          console.error('Sign-out error:', error.message);
-        });
       }
     })
     .catch(error => {
@@ -206,12 +200,7 @@ function register() {
       return userCredential.user.sendEmailVerification();
     })
     .then(() => {
-      // Sign the user out to prevent them from accessing the app
-      firebase.auth().signOut().then(() => {
-        console.log('User signed out due to unverified email.');
-      }).catch(error => {
-        console.error('Sign-out error:', error.message);
-      });
+      firebase.auth().signOut()
       passwordMismatchSignup.innerText = ''; // Clear the error message
       successMessageSignup.innerText = 'Registration successful. Please check your email to verify.';
       console.log('Verification email sent. Please verify your email.');
