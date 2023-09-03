@@ -35,6 +35,47 @@
 </head>
 
 
+
+<!-- Added button thing -->
+<style>
+    .button-30 {
+        background-color: #fcfcfd;
+        border: 0;
+        color: #36395a;
+        padding: 10px 82px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        <!-- font-weight: bold;
+       -->margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0d58d9 0 -3px 0 inset;
+        transition: box-shadow .15s, transform .15s
+    }
+
+    .button-30:focus {
+        outline: 0;
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset
+    }
+
+    .button-30:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px)
+    }
+
+    .button-30:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px)
+    }
+</style>
+
+<!-- END BUTTON -->
+
+
+
+
 <!-- nav -->
 <body class="fixed-top-nav ">
     <header>
@@ -48,8 +89,9 @@
                         <li class="nav-item "> <a class="nav-link" href="/climbuntu/">ClimBuntu</a> </li>
                         <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> </button> </li>
                     </ul>
+                    <!-- <form action="h" method="get" target="_blank"> <button class="button-30" role="button">View CV</button> </form> -->
                     <div>
-                        <button type="button" class="button" id="form-open">Login</button>
+                        <button type="button" class="button-30" id="form-open">Login</button> 
                         <button type="button" class="button" id="logout-button" style="display: none;">Log Out</button>
                     </div>
                 </div>
