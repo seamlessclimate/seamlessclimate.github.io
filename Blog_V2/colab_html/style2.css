@@ -1,0 +1,45 @@
+
+/* Reset default styles */
+nav, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set background and height for the navigation bar */
+nav {
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Style for the logo */
+.logo img {
+  height: 30px;
+  width: 90px;
+  margin: 0 auto;
+}
+
+/* Style for the navigation links */
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f4b71e;
+}
