@@ -7,15 +7,38 @@ body {
   text-align: justify;
 }
 
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
+.header {
   position: fixed;
-  top: 0;
-  left: 0;
+  height: 80px;
   width: 100%;
+  z-index: 100;
+
 }
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  min-height: 0;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+
+
+.navbar .container {
+  max-width: 800px;
+}
+
+.navbar .navbar-brand{
+  padding-right: auto;
+}
+.navbar .nav-items{
+  width: 250px;
+}
+.navbar .nav-items .nav-item{
+  padding: 0 5px;
+}
+
 
 h1 {
   margin: 0;
@@ -81,7 +104,7 @@ p {
 }
 
 #backButton {
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 0;
   cursor: pointer;
   background-color: #6d5f5f6e;
@@ -96,6 +119,9 @@ p {
   background-color: #444;
 }
 
+#home-button i {
+  padding-right: 5px;
+}
 .custom-link {
   color: #4c8fff;
   text-decoration: underline;
@@ -162,7 +188,7 @@ p {
   color: #333;
   background-color: #fff;
   width: 700px;
-  height: 350px;
+  height: 400px;
   margin: 0 auto;
   margin-top: 200px;
   padding: 20px;
