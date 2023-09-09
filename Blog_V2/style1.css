@@ -55,20 +55,20 @@ a {
 
 /* Home */
 .home {
-  position: relative;
+  position: absolute;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
 .home::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -50%;
   height: 100%;
   width: 200%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
+  z-index: 999;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s ease-out;
@@ -76,12 +76,65 @@ a {
 .home.show::before {
   opacity: 1;
   pointer-events: auto;
+  z-index: 999;
 }
 
 
 /* CSS to disable scrolling when the form is active */
 .disable-scroll {
   overflow: hidden;
+}
+
+
+.button-40 {
+    background-color: #fcfcfd;
+    border: 0;
+    color: #36395a;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 15px; 
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0d58d9 0 -3px 0 inset;
+    transition: box-shadow .15s, transform .15s
+}
+
+.button-40:focus {
+    outline: 0;
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset
+}
+
+.button-40:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px)
+}
+
+.button-40:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px)
+}
+
+.navbar-collapse.show{
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  display: block;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.navbar-collapse.show #button{
+  margin: 0 0 0 auto;
+  overflow: hidden;
+}
+
+.navbar-collapse.show .button-40{
+  margin-right: 0;
+  float: right;
 }
 
 /* From */
@@ -234,7 +287,7 @@ a {
 
 .popup {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -248,6 +301,8 @@ a {
 
 /* Styles for the popup content */
 .popup-content {
+  display: block;
+  overflow: hidden;
   margin-top: 70px;
   background-color: #fff;
   padding: 20px;
@@ -304,8 +359,8 @@ a {
   animation: fadeInPopup 0.5s ease forwards;
 }
 .button-container {
-  width: 100px;
-  margin: auto; /* Adjust the margin as needed */
+  width: 150px;
+  margin: auto; /* Adjust the margin as needed 
 
 }
 
