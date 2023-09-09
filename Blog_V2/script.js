@@ -333,3 +333,22 @@ logoutButton.addEventListener('click', () => {
       console.error('Logout error:', error.message);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var navbarCollapse = document.querySelector(".navbar-collapse");
+  var popupContent = document.querySelector(".popup-content");
+  var closepopup = document.getElementById("close-popup")
+
+  if (navbarCollapse && popupContent) {
+    navbarCollapse.addEventListener("transitionend", function() {
+      if (navbarCollapse.classList.contains("show")) {
+        popupContent.style.marginTop = "350px";
+        closepopup.style.marginTop = "360px";
+      } else {
+        popupContent.style.marginTop = "70px";
+        closepopup.style.marginTop = "80px";
+      }
+    });
+  }
+});
