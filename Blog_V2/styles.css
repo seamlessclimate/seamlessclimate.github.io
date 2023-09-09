@@ -43,6 +43,7 @@ nav, ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 
 /* Set background and height for the navigation bar */
