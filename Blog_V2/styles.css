@@ -10,7 +10,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    padding: 0 100px 0;
+    width: 1100px;
+    margin: auto;
 }
 
 h2 {
@@ -224,8 +225,9 @@ section:nth-child(3) {
     color: #fff;
     text-align: center;
     align-items: center;
-    height: 30px;
-    font-weight: bold;
+    height: 42px;
+    font-size: 14px;
+/*    font-weight: bold;*/
 }
 
 /* .tile-description {
