@@ -86,6 +86,7 @@ nav {
 
 /* Section 2: Description of Tutorial */
 section:nth-child(2) {
+    margin-top: 50px;
     padding: 20px;
     text-align: justify;
 }
