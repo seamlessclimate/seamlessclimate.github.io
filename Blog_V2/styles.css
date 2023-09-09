@@ -84,7 +84,14 @@ nav {
   color: #f4b71e;
 }
 
-
+@media (max-width: 768px){
+    body{
+        padding: 0 10px 0;
+    }
+    .navbar .container {
+        margin: 0;
+    }
+}
 /* Section 2: Description of Tutorial */
 section:nth-child(2) {
     padding: 20px;
