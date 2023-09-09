@@ -22,14 +22,16 @@ h2 {
 h3 {
   font-size: 24px;
 }
-
+.navbar .container{
+    width: 100%;
+}
 
 @media (max-width: 768px){
     body{
         padding: 0 10px 0;
     }
     .navbar .container {
-        margin: 0;
+        width: 100%;
     }
 }
 
@@ -85,21 +87,26 @@ nav {
 /* Section 2: Description of Tutorial */
 section:nth-child(2) {
     padding: 20px;
-    margin-top: 30px;
     text-align: justify;
 }
 
 
 /* Sun and moon icons */
-.theme-icon {
-  font-size: 24px;
-  margin-right: 10px;
-  display: none;
+.fa-sun{
+    display:none
+}
+.fa-moon{
+    padding-left:10px;
+    padding-top:12px;
+    display:block
 }
 
-/* Show the sun icon by default */
-#sun, #moon{
-  display: inline;
+.navbar i.fas.fa-moon, .navbar i.fas.fa-sun {
+    background-color: transparent;
+}
+.navbar #light-toggle {
+    border: none;
+    background-color: transparent;
 }
 
 
@@ -372,59 +379,6 @@ footer b {
   color: #888; /* Less prominent color for the name */
 }
 
-
-
-
-/* Toggle Switch Styling */
-.toggle-switch {
-    position: relative;
-    top: 3px;
-    right: 5px;
-    display: inline-block;
-    width: 45px;
-    height: 21px;
-    background-color: #888;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-}
-
-.toggle-switch input[type="checkbox"] {
-    display: none;
-}
-
-.toggle-switch label {
-    display: block;
-    width: 17px;
-    height: 17px;
-    margin: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: margin 0.3s;
-}
-
-.toggle-switch input[type="checkbox"]:checked + label {
-    margin-left: 25px;
-}
-
-/* Set colors for the bright mode */
-body:not(.dark-mode) .toggle-switch {
-    background-color: #999;
-}
-
-body:not(.dark-mode) .toggle-switch label {
-    background-color: #333;
-}
-
-
-/* Set colors for the dark mode */
-body.dark-mode .toggle-switch {
-    background-color: #888;
-}
-
-body.dark-mode .toggle-switch label {
-    background-color: white;
-}
 
 
 
