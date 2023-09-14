@@ -159,6 +159,7 @@ img {
 /* Section 3: Tutorial Hyperlinks */
 section:nth-child(3) {
     padding: 20px;
+    padding-top: 0;
 }
 
 .subsection {
