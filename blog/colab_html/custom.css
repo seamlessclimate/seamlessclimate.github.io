@@ -1,49 +1,44 @@
-/* CSS for Header Navigation Bar */
-
-/* Reset default styles */
-nav, ul {
+* {
   margin: 0;
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-/* Set background and height for the navigation bar */
-nav {
-  background-color: #333;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+a {
+  text-decoration: none;
+}
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
   padding: 0 20px;
 }
-
-/* Style for the logo */
-.logo img {
-  height: 40px;
-  width: 40px;
-  padding-top: 25px;
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  min-height: 0;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 
-/* Style for the navigation links */
-.nav-links li {
-  display: inline;
-  margin-left: 20px;
+
+.navbar .container {
+  max-width: 800px;
 }
 
-.nav-links li:first-child {
-  margin-left: 0;
+.navbar .navbar-brand{
+  padding-right: auto;
+}
+.navbar .nav-items{
+  width: 250px;
+}
+.navbar .nav-items .nav-item{
+  padding: 0 5px;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #f4b71e;
-}
 
 /* Styling for the footer */
 footer {
@@ -95,3 +90,5 @@ footer {
 .footer-right {
   font-size: 14px;
 }
+
+
