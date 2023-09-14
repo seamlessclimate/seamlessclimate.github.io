@@ -40,21 +40,26 @@ function handleDarkModeToggle() {
 const loginButton = document.getElementById('form-open');
 const logoutButton = document.getElementById('logout-button');
 const userButton = document.getElementById('User-profile');
-
+const loginButton1 = document.getElementById('form-open-1');
+const userButton1 = document.getElementById('User-profile-1');
 
 // Function to update button visibility based on authentication state
 function updateButtonVisibility(user) {
   if (user) {
     // User is logged in, show the logout button and hide the login button
     loginButton.style.display = 'none';
+    loginButton1.style.display = 'none';
     userButton.style.display = 'block';
+    userButton1.style.display = 'block';
     logoutButton.style.display = 'block';
     document.body.classList.remove("disable-scroll");
     // enableTutorialLinks();
   } else {
     // User is logged out, show the login button and hide the logout button
     loginButton.style.display = 'block';
+    loginButton1.style.display = 'block';
     userButton.style.display = 'none';
+    userButton1.style.display = 'none';
     logoutButton.style.display = 'block';
     document.body.classList.remove("disable-scroll");
     // disableTutorialLinks();
@@ -109,6 +114,16 @@ formOpenBtn.addEventListener("click", () => {
   home.classList.add("show");
   document.body.classList.add("disable-scroll");
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button1 = document.getElementById("form-open-1");
+  const button2 = document.getElementById("form-open-1");
+
+  button1.addEventListener("click", function () {
+    formOpenBtn.click();
+  });
+
+});
 
 
 formCloseBtn.addEventListener("click", () => {
@@ -265,6 +280,15 @@ profileButton.addEventListener('click', () => {
 closePopup.addEventListener('click', () => {
   userPopup.style.display = 'none';
   document.body.classList.remove("disable-scroll");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button2 = document.getElementById("User-profile-1");
+
+  button2.addEventListener("click", function () {
+    profileButton.click();
+  });
+
 });
 
 
