@@ -423,6 +423,20 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+      // Find the <html> element
+      const htmlElement = document.documentElement;
+    
+      // Check if the data-theme attribute exists
+      if (htmlElement.hasAttribute('data-theme')) {
+        // Remove the data-theme attribute
+        htmlElement.removeAttribute('data-theme');
+        console.log('data-theme="dark" attribute has been removed.');
+      } else {
+        console.log('data-theme="dark" attribute does not exist.');
+      }
+    </script>
+
 
 </body>
 
