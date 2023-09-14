@@ -43,7 +43,7 @@ a {
   color: #d9d9d9;
 }
 .button {
-  padding: 6px 24px;
+/*  padding: 20px;*/
   border: 2px solid #fff;
   background: transparent;
   border-radius: 6px;
@@ -52,6 +52,21 @@ a {
 .button:active {
   transform: scale(0.98);
 }
+
+#button-m-view {
+  display: none;
+  
+}
+
+@media (max-width: 768px){
+  #button-m-view {
+    display: block;
+  }
+  .nav-button{
+    display: none;
+  }
+}
+
 
 /* Home */
 .home {
@@ -96,7 +111,7 @@ a {
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
-    margin: 4px 15px; 
+    margin: 4px auto; 
     cursor: pointer;
     border-radius: 4px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0d58d9 0 -3px 0 inset;
@@ -116,6 +131,12 @@ a {
 .button-40:active {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px)
+}
+
+#button-m-view button {
+  align-items: center;
+  margin: 10px auto;
+  border-top: 1px solid black;
 }
 
 .navbar-collapse.show{
