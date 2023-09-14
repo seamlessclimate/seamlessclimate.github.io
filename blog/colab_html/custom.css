@@ -1,10 +1,4 @@
-body {
-    background-color: #ffffff !important; /* Override background color */
-    color: #000000 !important; /* Override text color */
-}
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong, .nav-link, th, .highlight .n, .p {
-    color: #000000 !important;
-}
+
 * {
   margin: 0;
   padding: 0;
