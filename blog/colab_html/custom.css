@@ -1,3 +1,7 @@
+body {
+    background-color: #ffffff !important; /* Override background color */
+    color: #000000 !important; /* Override text color */
+}
 * {
   margin: 0;
   padding: 0;
