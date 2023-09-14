@@ -53,18 +53,30 @@ a {
   transform: scale(0.98);
 }
 
-#button-m-view {
+.nav-button {
   display: none;
-  
+
 }
 
-@media (max-width: 768px){
-  #button-m-view {
-    display: block;
-  }
-  .nav-button{
-    display: none;
-  }
+.welcome {
+/*  display: flex;*/
+  margin: 10px auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.invite-note {
+  width: 70%;
+  font-family: serif;
+  color: #2a9ae1;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+.invite-note p{
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 
