@@ -38,5 +38,5 @@ usersRef.once('value', (snapshot) => {
   const uniqueInstitutionsElement = document.getElementById('uniqueInstitutions');
 
   totalUsersElement.textContent = "Total Users: " + totalUsers;
-  uniqueInstitutionsElement.textContent = "Unique Institutions: " + uniqueInstitutions.size;
+  uniqueInstitutionsElement.textContent = "Institutions: " + uniqueInstitutions.size;
 });
