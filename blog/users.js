@@ -9,7 +9,7 @@
 //   measurementId: "G-0R00GJTLX5"
 // };
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
 // Reference to the "users" node in your Firebase Realtime Database
 const usersRef = firebase.database().ref('users');
