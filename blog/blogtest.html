@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<!-- Sany head change  -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blog Python Tutorial | Abdullah Al Fahad, Ph.D.</title>
-    <!-- Include Bootstrap CSS for responsive design -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Your other stylesheets go here -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style1.css" />
-    <!-- Other CSS links go here -->
+    <title>Climate Data Science & Modeling | Abdullah Al Fahad, Ph.D.</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css" />
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
 </head>
-<body class="fixed-top-nav">
+
+
+<!-- nav -->
+<body>
     <header>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Abdullah Al Fahad, Ph.D.</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/research/">Research</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="/blog/">Blog<span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="/climbuntu/">ClimBuntu</a></li>
+        <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+            <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Abdullah Al Fahad, Ph.D. </span></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item "> <a class="nav-link" href="/">Home</a> </li>
+                        <li class="nav-item "> <a class="nav-link" href="/research/">Research</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="/blog/">Blog<span class="sr-only">(current)</span></a> </li>  
+                        <li class="nav-item "> <a class="nav-link" href="/climbuntu/">ClimBuntu</a> </li>
+<!--                         <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> </button> </li> -->
+                        <li class="nav-button">
+                            <div id='button'>
+                                <button type="button" class="button-40" id="form-open">Log in</button> 
+                                <button type="button" class="button-40" id="User-profile" style="display: none;">My Profile</button>
+                            </div>
+                        </li>
                     </ul>
-                    <div>
-                        <button type="button" class="button-40" id="form-open">Log in</button>
-                        <button type="button" class="button-40" id="logout-button" style="display: none;">Log Out</button>
-                    </div>
                 </div>
             </div>
-        </nav>
+        </nav> 
     </header>
-
-    <!-- Rest of your HTML content goes here -->
-
-
+    
+<!-- here  -->
 
 <!-- Section 2: Description of Tutorial -->
     <section id="section1">
         <div class="section-content">
             <img src="./images/climate data analysis.jpg" width="200px" alt="Climate Data Analysis">
             <div class="text-content">
-                <h2>Blog</h2>
-                <p>Exploring the intersection of Atmospheric Physics.</p>
-                <p><br>Whether you're an experienced scientist seeking to enhance your data analysis prowess with Python's capabilities or a curious student eager to learn about climate science, this platform is tailored for you. Together, we will delve into the depths of Python's programming prowess, applying it to climate science challenges and fostering a deeper understanding of the natural world. No matter your background or expertise level, I invite you to join this community of learners and sharers, where knowledge knows no boundaries. Let's embark on this exhilarating adventure of discovery and grow together in our scientific pursuits. Welcome aboard!</p>
+                <h2>Climate Data Science & Modeling</h2>
+                
+                <p>This tutorial is a guide to understanding and utilizing climate data through advanced computational methods, whether you're an experienced scientist seeking to enhance your data analysis prowess with Python's capabilities or a curious student eager to learn about climate science. We're here to help you grasp the complexities of climate change and contribute to a sustainable future using data-driven approaches. Everyone is welcome to join this inclusive community of learners and contributors, regardless of your background or level of expertise. Let's start this exciting learning journey together and grow in our scientific explorations. This project was led by <b>Dr. Fahad</b>.</p>
+
                 
             </div>
         </div>
+            <div class="welcome">
+                <div class="invite-note"><p>To explore our content, please login!</p> </div>
+                <div id='button-m-view'>
+                    <button type="button" class="button-40" id="form-open-1" >Login/Register</button> 
+                    <button type="button" class="button-40" id='User-profile-1' style="display: none;">My Profile</button>
+                </div>
+            </div>
     </section>
 
 <!-- Section 3: Tutorial Hyperlinks -->
     <section id="section2">
-        <h2>Python Tutorial for Climate Science</h2>
         <p>
-            To access the tutorial, please ensure you are logged in. Simply click the "Log in" option located in the top right corner of the page. If you haven't previously registered, you can do so by clicking "Sign Up" in the pop-up window. After registering, kindly verify your email address, and then you'll be able to log in and access the content. After logged in, please fill up the form here. </p>
+            To access the tutorial, please ensure you are logged in. Simply click the "Log in" option located in the top of the page. If you haven't previously registered, you can do so by clicking "Sign Up" in the pop-up window. After registering, kindly verify your email address, and then you'll be able to log in and access contents.</p>
         <div class="tutorial-subsections">
 
             <!-- Sub-section 1: Python -->
@@ -180,7 +199,7 @@
 
     <!-- Section 4: Guided Projects -->
     <section id="section3">
-        <h2>Guided Projects</h2>
+        <h2>Machine Learning Projects</h2>
         <div class="projects">
             <!-- Project 01 -->
             
@@ -191,7 +210,7 @@
                     </div>
                     
                     <div class="project-details">
-                        <p>Predicting Nino3.4 index with 6 months lead with Machine Learning</p>
+                        <p>Predicting ENSO with Machine Learning</p>
                     </div>
                 </div>
             </a>
@@ -213,8 +232,17 @@
                 </div>
                 <div class="tile">
                     <a href="#">
-                        <span class="tile-description">MITgcm</span>
+                        <span class="tile-description">MITgcm (coming)</span>
                         <img src="./images/mitgcm.jpg.png" alt="MITgcm">
+                    </a>
+                </div>
+
+                <div class="tile">
+                    <a href="#">
+                        <span class="tile-description">SPEEDY (coming)</span>
+                        <img 
+				style="width: 200px; height: 150px;"
+				src="./images/atm_circulation_0.jpg" alt="speedy">
                     </a>
                 </div>
             </div>
@@ -231,6 +259,7 @@
             <div class="contributor">
                 <img src="./images/people/Abdullah Al Fahad.jpg" alt="Contributor 1">
                 <h3>Dr. Abdullah Al Fahad</h3>
+                <p><b>Project Lead</b></p>
                 <p><b>GMAO, NASA GSFC</b></p>
                 <p>Contact: <a href="mailto:a.fahad@nasa.gov">a.fahad@nasa.gov</a></p>
             </div>
@@ -299,7 +328,7 @@
             </div>
         </div>
     </section>
-        <div  class="home">
+    <div  class="home">
       <div class="form_container">
         <i class="uil uil-times form_close"></i>
         <!-- Login From -->
@@ -319,10 +348,10 @@
             </div>
 
             <div class="option_field">
-              <span class="checkbox">
+              <!-- <span class="checkbox">
                 <input type="checkbox" id="check" />
                 <label for="check">Remember me</label>
-              </span>
+              </span> -->
               <a href="#" class="forgot_pw" id="forgot-password">Forgot password?</a>
             </div>
 
@@ -333,11 +362,24 @@
           </form>
         </div>
 
-        <!-- Signup From -->
+        <!-- Signup Form -->
         <div class="form signup_form">
           <form action="#">
             <h2>Signup</h2>
             <div id="success-message-signup" class="success-message-signup"></div>
+            <div id="error-message-signup" class="erorr-message-signup"></div>
+            <div class="input_box">
+              <input type="email" id="register-name" placeholder="Enter your name" required />
+              <i class="uil uil-user name"></i>
+            </div>
+            <div class="input_box">
+              <input type="email" id="register-institute" placeholder="Enter your institute" required />
+              <i class="uil uil-university institute"></i>
+            </div>
+            <div class="input_box">
+              <input type="email" id="register-position" placeholder="Enter your position" required />
+              <i class="uil uil-label position"></i>
+            </div>
             <div class="input_box">
               <input type="email" id="register-email" placeholder="Enter your email" required />
               <i class="uil uil-envelope-alt email"></i>
@@ -360,7 +402,21 @@
             <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
           </form>
         </div>
+      </div>
+    </div>
+    <div class="popup" id="user-popup">
+      <div class="popup-content">
+        <i class="uil uil-times" id="close-popup"></i>
+        <!-- Content of the user profile popup goes here -->
+    <p><span class="label"><b>Name:</b></span> <span class="info" id="user-name"></span></p>
+    <p><span class="label"><b>Email:</b></span> <span class="info" id="user-email"></span></p>
+    <p><span class="label"><b>Institute:</b></span> <span class="info" id="user-institute"></span></p>
+    <p><span class="label"><b>Position:</b></span> <span class="info" id="user-position"></span></p>
 
+
+        <div class="button-container">
+            <button  type="button" class="button-40 logout-button" id="logout-button" style="display: none;">Log Out</button>
+        </div>
       </div>
     </div>
     <div id="totalUsers">Total Users: Loading...</div>
@@ -368,20 +424,36 @@
 
     <!-- Section 6: Footer -->
     <footer>
-    <p> This webpage is designed by <b>Md. Tashin Ahammad</b> and <b>Tahmidul Azom Sany</b></p>
+    <p> This page is designed by <b>Md. Tashin Ahammad</b> and <b>Tahmidul Azom Sany</b></p>
   </footer>   
        <!-- Link to your JavaScript file -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 
-    <!-- Include Bootstrap JS for responsive features -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
-    <!-- Your other scripts go here -->
-    <!-- Link to your JavaScript file -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+      // Find the <html> element
+      const htmlElement = document.documentElement;
+    
+      // Check if the data-theme attribute exists
+      if (htmlElement.hasAttribute('data-theme')) {
+        // Remove the data-theme attribute
+        htmlElement.removeAttribute('data-theme');
+        console.log('data-theme="dark" attribute has been removed.');
+      } else {
+        console.log('data-theme="dark" attribute does not exist.');
+      }
+    </script>
+
+
 </body>
+
 </html>
