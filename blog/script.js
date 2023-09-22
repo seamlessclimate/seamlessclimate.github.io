@@ -378,35 +378,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Initialize Firebase and get a reference to the "users" node
-// var database = firebase.database();
-var usersRef = database.ref('users');
-
-// Initialize variables to store user and institution counts
-var totalUsersElement = document.getElementById('totalUsers');
-var uniqueInstitutionsElement = document.getElementById('uniqueInstitutions');
-var totalUsers = 0;
-var uniqueInstitutions = new Set();
-
-// Retrieve data from the "users" node
-usersRef.once('value', function(snapshot) {
-  snapshot.forEach(function(userSnapshot) {
-    var user = userSnapshot.val();
-
-    // Increment the total user count
-    totalUsers++;
-
-    // Check if the user has an associated institution
-    if (user.institute) {
-      var institutionId = user.institute;
-
-      // Add the institution to the Set to ensure uniqueness
-      uniqueInstitutions.add(institutionId);
-    }
-  });
-
-  // After iterating through all users, update the HTML elements
-  totalUsersElement.textContent = "Total Users: " + totalUsers;
-  uniqueInstitutionsElement.textContent = "Unique Institutions: " + uniqueInstitutions.size;
-});
 
