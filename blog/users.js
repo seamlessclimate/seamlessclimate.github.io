@@ -27,9 +27,9 @@ usersRef.once('value', (snapshot) => {
     totalUsers++;
 
     // Check if the user has an associated institution
-    if (user.institutions) {
+    if (user.institute) {
       // Add the institution to the Set to ensure uniqueness
-      uniqueInstitutions.add(user.institutions);
+      uniqueInstitutions.add(user.institute);
     }
   });
 
