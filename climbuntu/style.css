@@ -51,7 +51,7 @@ section {
 
 @media screen and (max-width: 1100px) {
     #climbuntu {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     .about-section {
@@ -89,7 +89,6 @@ section {
 }
 
 .download-container {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
