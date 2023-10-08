@@ -168,7 +168,7 @@ body {
 .libraries,
 .system-requirements,
 .get-involved {
-    background-color: #EAF2F8;
+    background-color: #8fb5db4f;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -195,7 +195,7 @@ li {
 /* Adjustments for specific sections */
 
 .get-involved {
-    background-color: #EAECEE;
+    background-color: #EAECEE4f;
 }
 
 .github-button {
