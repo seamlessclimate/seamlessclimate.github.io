@@ -65,7 +65,7 @@ p {
 
 #publications p:nth-child(odd),
 #conferences p:nth-child(odd) {
-    background-color: #7e7d7d26; /* Background color for odd-numbered items */
+    background-color: #7e7d7d12; /* Background color for odd-numbered items */
     padding-bottom: 20px; /* Adjust the gap for odd-numbered items */
     padding-top: 20px;
 }
@@ -73,7 +73,7 @@ p {
 
 #publications p:nth-child(even),
 #conferences p:nth-child(even) {
-    background-color: #c1cad126; /* Background color for even-numbered items */
+    background-color: #c1cad112; /* Background color for even-numbered items */
     padding-bottom: 20px; /* Adjust the gap for even-numbered items */
     padding-top: 20px;
 }
