@@ -1,6 +1,8 @@
 /* Main container styles */
 .container {
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Toggle buttons styles */
