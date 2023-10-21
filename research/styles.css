@@ -1,8 +1,9 @@
-
+/* Main container styles */
 .container {
     text-align: center;
 }
 
+/* Toggle buttons styles */
 .toggle-buttons {
     margin: 20px 0;
     display: flex;
@@ -10,48 +11,74 @@
 
 .toggle-buttons button {
     width: 33%;
-    background-color: #f2f2f240;
-    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
-/* Keep the active button in its original position */
 .toggle-buttons button.active {
-    background-color: #33333375;
-    color: #fff;
-    position: static; /* Reset the position */
+    background-color: #f2f2f2;
+    color: #333;
 }
 
+/* Content sections styles */
 .content {
     display: none;
-    padding: 10px;
     text-align: left;
+/*    background-color: #f2f2f2;*/
+    margin: 20px;
 }
 
-.active {
+.content.active {
     display: block;
 }
 
-/* Beautifully decorated list for articles and conferences */
+/* List items styles */
 ul {
     list-style-type: decimal;
     padding-left: 20px;
 }
 
 h4 {
-    margin: 15px 0;
+    margin: 20px 0;
+    font-weight: bold;
 }
 
 p {
-    margin: 5px 0;
+    margin: 0;
+    line-height: 1.6;
 }
+
 
 #publications p,
 #conferences p {
-    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
     text-indent: -20px;
 }
+
+
+/* Alternate styles for every 2nd item in the list */
+
+#publications p:nth-child(odd),
+#conferences p:nth-child(odd) {
+    background-color: #8797845e; /* Background color for odd-numbered items */
+    padding-bottom: 20px; /* Adjust the gap for odd-numbered items */
+    padding-top: 20px;
+}
+
+
+#publications p:nth-child(even),
+#conferences p:nth-child(even) {
+    background-color: #c1cad14f; /* Background color for even-numbered items */
+    padding-bottom: 20px; /* Adjust the gap for even-numbered items */
+    padding-top: 20px;
+}
+
 
 /* Additional CSS for the Ph.D. Thesis section */
 #thesis {
