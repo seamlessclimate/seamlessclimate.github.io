@@ -19,9 +19,10 @@ body {
 
 h2 {
     margin-top: 0;
-    background-color: #0000004f;
+    background-color: #01a9c3;
     padding: 10px;
     font-size: 22px;
+    color: white;
 }
 
 .tile ul {
