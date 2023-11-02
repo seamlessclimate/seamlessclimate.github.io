@@ -14,22 +14,22 @@ body {
     width: 45%;
     margin: 25px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.33);
-    background-color: #ffffff4d;
+    background-color: #ffffff2e;
 }
 
 h2 {
     margin-top: 0;
-    background-color: #44639269;
+    background-color: #0000004f;
     padding: 10px;
     font-size: 22px;
 }
 
-ul {
+.tile ul {
     padding-left: 0;
     list-style-type: none;
 }
 
-li {
+.tile ul li {
     padding: 10px 20px;
 }
 
