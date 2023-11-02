@@ -30,7 +30,12 @@ h2 {
 }
 
 .tile ul li {
-    padding: 10px 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.tile ul li p {
+    font-size: 15px;
+    padding: 0;
 }
 
 @media screen and (max-width: 1024px) {
