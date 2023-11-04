@@ -42,14 +42,14 @@ h2 {
     padding: 0;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .container_tile {
         width: 90%;
     }
     .tile {
         width: 80%;
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .tile {
