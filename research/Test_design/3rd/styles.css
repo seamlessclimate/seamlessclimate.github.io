@@ -111,6 +111,10 @@ body {
     .thumbnail {
         height: 120px;
     }
+    .scrollable-content {
+        max-height: calc(100% - 166px);
+    }
+    
     .ml_proj {
         height: 130px;
     }
