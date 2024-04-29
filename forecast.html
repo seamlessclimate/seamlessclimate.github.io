@@ -147,19 +147,20 @@
                 <h1 class="mb-0">If You Have Any Query, Feel Free To Contact Us</h1>
             </div>
 
-<body onload="changeVariable('cloud')">
+<body onload="changeVariable('rain')">
     <div>
         <label for="variable-select">Select a variable:</label>
         <select id="variable-select" onchange="changeVariable(this.value)">
-            <option value="cloud">Cloud</option>
+
             <option value="rain">Rain</option>
+            <option value="cloud">Cloud</option>
             <option value="for">For</option>
         </select>
     </div>
 
     <div class="image-container" id="rain-images">
         <iframe class="selected-image" id="rain-image-1" src="img/rain1.html" alt="Rain Image 1"></iframe>
-        <iframe class="selected-image" id="rain-image-2" src="img/rain2.html" alt="Rain Image 2"></iframe>
+        <iframe class="selected-image" id="rain-image-2" src="img/cloud2.html" alt="Rain Image 2"></iframe>
     </div>
 
     <div class="image-container" id="cloud-images" style="display: none;">
